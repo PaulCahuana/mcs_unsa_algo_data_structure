@@ -11,7 +11,7 @@ int main ()
  	int cant=100;
   	int randomGenerate; 	
 	
-	int c=0;
+	
 	int cantidadLista=sizeof listaCantidades/sizeof listaCantidades[0];
 	cout<<"cantidadLista "<< cantidadLista<<endl;
 	
@@ -20,6 +20,7 @@ int main ()
 	std::string cantidad = std::to_string(listaCantidades[i]);
 	ofstream outfile (cantidad+"-numeros.txt");
 	srand (time(NULL));// initialize random seed: 
+	int c=0;
     while(c<listaCantidades[i])
 	{
 		randomGenerate = rand() % listaCantidades[i] + 1;// generate  random number 
